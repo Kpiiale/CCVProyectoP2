@@ -35,7 +35,8 @@
                        HasShadow="True">
                     <VerticalStackLayout>
                         <Image Source="administrador.jpg" Aspect="AspectFill" HeightRequest="120" />
-                        <Label Text="..." FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Administrador" TextColor="Black" HorizontalOptions="Center" />
+                        <Button Text ="Ingresar" BackgroundColor="Black" TextColor="White"></Button>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame Grid.Row="0" Grid.Column="1"
@@ -44,7 +45,8 @@
                        HasShadow="True">
                     <VerticalStackLayout>
                         <Image Source="profesor.jpg" Aspect="AspectFill" HeightRequest="120" />
-                        <Label Text="..." FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Profesor" TextColor="Black" HorizontalOptions="Center" />
+                        <Button Text ="Ingresar" BackgroundColor="Black" TextColor="White"></Button>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame Grid.Row="1" Grid.Column="0"
@@ -53,7 +55,8 @@
                        HasShadow="True">
                     <VerticalStackLayout>
                         <Image Source="estudiante.jpg" Aspect="AspectFill" HeightRequest="120" />
-                        <Label Text="..." FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Estudiante" TextColor="Black" HorizontalOptions="Center" />
+                        <Button Text ="Ingresar" BackgroundColor="Black" TextColor="White" FontFamily=""></Button>
                     </VerticalStackLayout>
                 </Frame>
             </Grid>
