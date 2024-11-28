@@ -3,63 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CCVProyectoP2.Views.IndexView"
              Title="IndexView">
-    <VerticalStackLayout Spacing="10">
+    <ScrollView Background="#e6e2dc"> 
+        <VerticalStackLayout>
+            <Image Source="escuela.jpg"
+                   Aspect="AspectFill"
+                   HeightRequest="200"
+                   Margin="0,10,0,10" />
+            <Label Text="Escuelita Gotitas del Saber"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#444444"
+                   Margin="0,10" />
+            <Label Text="Bienvenidos"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#444444"
+                   Margin="0,5,0,20" />
+            <Grid Padding="10" ColumnSpacing="10" RowSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0"
+                       CornerRadius="10"
+                       BackgroundColor="White"
+                       HasShadow="True">
+                    <VerticalStackLayout>
+                        <Image Source="administrador.jpg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="..." FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="1"
+                       CornerRadius="10"
+                       BackgroundColor="White"
+                       HasShadow="True">
+                    <VerticalStackLayout>
+                        <Image Source="profesor.jpg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="..." FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="0"
+                       CornerRadius="10"
+                       BackgroundColor="White"
+                       HasShadow="True">
+                    <VerticalStackLayout>
+                        <Image Source="estudiante.jpg" Aspect="AspectFill" HeightRequest="120" />
+                        <Label Text="..." FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
 
-        <!-- Header Section -->
-        <Grid HeightRequest="200" BackgroundColor="#FF8C00">
-            <!-- Background Shapes (use paths or images for the circles if necessary) -->
-            <Label Text="Online Education" 
-                   FontSize="32" 
-                   FontAttributes="Bold" 
-                   TextColor="White" 
-                   HorizontalOptions="Start" 
-                   VerticalOptions="Center"
-                   Margin="20,0,0,0" />
-        </Grid>
-
-        <!-- Calendar Navigation -->
-        <HorizontalStackLayout Padding="10" BackgroundColor="White" Spacing="10">
-            <Button Text="su" TextColor="#AAAAAA" BackgroundColor="Transparent" />
-            <Button Text="mo" TextColor="Blue" FontAttributes="Bold" BackgroundColor="Transparent" />
-            <Button Text="tu" TextColor="#AAAAAA" BackgroundColor="Transparent" />
-            <Button Text="we" TextColor="#AAAAAA" BackgroundColor="Transparent" />
-            <Button Text="th" TextColor="#AAAAAA" BackgroundColor="Transparent" />
-            <Button Text="fr" TextColor="#AAAAAA" BackgroundColor="Transparent" />
-            <Button Text="sa" TextColor="#AAAAAA" BackgroundColor="Transparent" />
-        </HorizontalStackLayout>
-
-        <!-- Learning Cards -->
-        <Grid Padding="10" ColumnDefinitions="*,*">
-            <Frame BackgroundColor="#F7F6F9" CornerRadius="15" Margin="5">
-                <VerticalStackLayout Spacing="5" Padding="10">
-                    <Label Text="A" FontSize="28" TextColor="#4A4A4A" HorizontalOptions="Center" />
-                </VerticalStackLayout>
-            </Frame>
-            <Frame BackgroundColor="#F7F6F9" CornerRadius="15" Margin="5">
-                <VerticalStackLayout Spacing="5" Padding="10">
-                    <Label Text="B" FontSize="28" TextColor="#4A4A4A" HorizontalOptions="Center" />
-                    <Image Source="administrador.jpg" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" />
-                </VerticalStackLayout>
-            </Frame>
-            <Frame BackgroundColor="#F7F6F9" CornerRadius="15" Margin="5">
-                <VerticalStackLayout Spacing="5" Padding="10">
-                    <Label Text="B" FontSize="28" TextColor="#4A4A4A" HorizontalOptions="Center" />
-                    <Image Source="profesor.jpg" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" />
-                </VerticalStackLayout>
-            </Frame> 
-        </Grid>
-
-        <!-- Puzzle Section -->
-        <Frame BackgroundColor="#E8F0FF" Padding="15" CornerRadius="15" Margin="10">
-            <VerticalStackLayout Spacing="10">
-                <Label Text="Lorem ipsum" FontSize="18" FontAttributes="Bold" TextColor="#4A4A4A" />
-                <HorizontalStackLayout Spacing="10">
-                    <Image Source="estudiante.jpg" WidthRequest="30" HeightRequest="30" />
-                    <Label Text="Grow with us." FontSize="14" TextColor="#4A4A4A" />
-                </HorizontalStackLayout>
-                <Button Text="Open" BackgroundColor="#FF8C00" TextColor="White" CornerRadius="15" HorizontalOptions="Start" />
-            </VerticalStackLayout>
-        </Frame>
-
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage> 

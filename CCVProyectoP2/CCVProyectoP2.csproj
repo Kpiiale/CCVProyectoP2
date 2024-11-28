@@ -58,7 +58,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\administrador.jpg" />
+	  <None Remove="Resources\Images\escuela.jpg" />
 	  <None Remove="Resources\Images\estudiante.jpg" />
+	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\profesor.jpg" />
 	</ItemGroup>
 
