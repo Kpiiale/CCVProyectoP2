@@ -38,7 +38,7 @@
                     <VerticalStackLayout>
                         <Image Source="administrador.jpg" Aspect="AspectFit" HeightRequest="100" />
                         <Label Text="Administrador" TextColor="Black" HorizontalOptions="Center" FontFamily="TheStudentsTeacherFont"/>
-                        <Button Text ="Ingresar" BackgroundColor="Black" TextColor="White" FontFamily="TheStudentsTeacherFont"></Button>
+                        <Button Text ="Ingresar" Clicked="Administrador_Clicked" BackgroundColor="Black" TextColor="White" FontFamily="TheStudentsTeacherFont"></Button>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame Grid.Row="0" Grid.Column="1"
@@ -48,7 +48,7 @@
                     <VerticalStackLayout>
                         <Image Source="profesor.jpg" Aspect="AspectFit" HeightRequest="100" />
                         <Label Text="Profesor" TextColor="Black" HorizontalOptions="Center" FontFamily="TheStudentsTeacherFont" />
-                        <Button Text ="Ingresar" BackgroundColor="Black" TextColor="White" FontFamily="TheStudentsTeacherFont"></Button>
+                        <Button Text ="Ingresar" Clicked="Profesor_Clicked" BackgroundColor="Black" TextColor="White" FontFamily="TheStudentsTeacherFont"></Button>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame Grid.Row="1" Grid.Column="0"
@@ -58,7 +58,7 @@
                     <VerticalStackLayout>
                         <Image Source="estudiante.jpg" Aspect="AspectFit" HeightRequest="100" />
                         <Label Text="Estudiante" TextColor="Black" HorizontalOptions="Center" FontFamily="TheStudentsTeacherFont" />
-                        <Button Text ="Ingresar" BackgroundColor="Black" TextColor="White" FontFamily="TheStudentsTeacherFont"></Button>
+                        <Button Text ="Ingresar" Clicked="Estudiante_Clicked" BackgroundColor="Black" TextColor="White" FontFamily="TheStudentsTeacherFont"></Button>
                     </VerticalStackLayout>
                 </Frame>
             </Grid>
