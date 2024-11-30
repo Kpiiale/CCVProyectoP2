@@ -10,9 +10,9 @@
                    HeightRequest="200"
                    Margin="0,10,0,10" />
             <Label Text="Escuelita Gotitas del Saber"
-                   FontSize="60"
+                   FontSize="40"
                    FontAttributes="Bold"
-                   FontFamily="SchoolworkFont"
+                   FontFamily="TheStudentsTeacherFont"
                    HorizontalTextAlignment="Center"
                    TextColor="#444444"
                    Margin="0,10" />
