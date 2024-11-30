@@ -70,6 +70,12 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.10" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.10" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls.Core" Version="9.0.10" />
+		<PackageReference Include="Microsoft.Maui.Essentials" Version="9.0.10" />
+		<PackageReference Include="Microsoft.Maui.Graphics" Version="9.0.10" />
+		<PackageReference Include="Microsoft.Maui.Resizetizer" Version="9.0.10" />
+		<PackageReference Include="Microsoft.UI.Xaml" Version="2.8.6" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.241114003" />
 	</ItemGroup>
 
 	<ItemGroup>
