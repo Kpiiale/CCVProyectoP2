@@ -1,0 +1,6 @@
+@CCVAPI_HostAddress = http://localhost:5182
+
+GET {{CCVAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
