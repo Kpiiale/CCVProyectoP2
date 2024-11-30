@@ -1,4 +1,6 @@
-﻿using CCVAPI.Interfaces;
+﻿using CCVAPI.Data;
+using CCVAPI.Interfaces;
+using CCVAPI.Models;
 
 namespace CCVAPI.Repositories
 {
@@ -9,7 +11,12 @@ namespace CCVAPI.Repositories
         {
             _context = context;
         }
-        public ICollection<Estudiante> GetEstudiantes()
+        //public ICollection<Estudiante> GetEstudiantes()
+        //{
+        //    return _context.Estudiantes.OrderBy(c => c.Id).ToList();
+        //}
+
+        ICollection<Estudiante> IEstudiante.GetEstudiantes()
         {
             return _context.Estudiantes.OrderBy(c => c.Id).ToList();
         }
